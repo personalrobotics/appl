@@ -7,8 +7,7 @@ include_directories(
   src
 )
 
-add_executable("${PROJECT_NAME}_despot"
-  src/main.cpp
+add_library("${PROJECT_NAME}" SHARED
   src/random_streams.cpp
   src/globals.cpp
   src/problems/lasertag/lasertag.cpp
@@ -21,7 +20,10 @@ add_executable("${PROJECT_NAME}_despot"
   src/problems/pocman/coord.cpp
 )
 
-install(TARGETS "${PROJECT_NAME}_despot"
+add_executable("${PROJECT_NAME}_despot" src/main.cpp)
+target_link_libraries("${PROJECT_NAME}_despot" "${PROJECT_NAME}")
+
+install(TARGETS "${PROJECT_NAME}" "${PROJECT_NAME}_despot"
   EXPORT "${PROJECT_NAME}Targets"
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
