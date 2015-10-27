@@ -1,0 +1,23 @@
+<?xml version="1.0"?> 
+<package format="2">
+  <!-- This is a Catkin package.xml file to optionally support building in
+       a Catkin workspace. Catkin is not required to build this package. For
+       more information, see: http://ros.org/reps/rep-0136.html -->
+  <name>appl_offline</name>
+  <version>0.96.0</version>
+  <description>
+    APPL is a C++ implementation of the SARSOP algorithm, using the factored
+    MOMDP representation. It takes as input a POMDP model in the POMDP or
+    POMDPX file format and produces a policy file. It also contains a simple
+    simulator for evaluating the quality of the computed policy.
+  </description>
+  <url type="website">http://bigbird.comp.nus.edu.sg/pmwiki/farm/appl/index.php</url>
+  <maintainer email="motion@comp.nus.edu.sg">Motion Modeling, Analysis, and Planning Lab</maintainer>
+  <license>GPL</license>
+  <buildtool_depend>cmake</buildtool_depend>
+  <!-- These are required by REP-136. -->
+  <exec_depend>catkin</exec_depend>
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>
