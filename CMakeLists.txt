@@ -144,7 +144,7 @@ install(TARGETS
     "${PROJECT_NAME}_pomdpeval"
     "${PROJECT_NAME}_pomdpsim"
     "${PROJECT_NAME}_pomdpsol"
-    "${PROJECT_NAME}_pomdpgraph"
+    "${PROJECT_NAME}_polgraph"
     "${PROJECT_NAME}_pomdpconvert"
   EXPORT "${PROJECT_NAME}Targets"
   ARCHIVE DESTINATION lib
