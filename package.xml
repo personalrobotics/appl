@@ -3,7 +3,7 @@
   <!-- This is a Catkin package.xml file to optionally support building in
        a Catkin workspace. Catkin is not required to build this package. For
        more information, see: http://ros.org/reps/rep-0136.html -->
-  <name>appl_offline</name>
+  <name>appl</name>
   <version>0.96.0</version>
   <description>
     APPL is a C++ implementation of the SARSOP algorithm, using the factored

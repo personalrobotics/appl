@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(appl_offline)
+project(appl)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -msse2 -mfpmath=sse")
 
@@ -152,7 +152,7 @@ install(TARGETS
   RUNTIME DESTINATION bin
 )
 install(DIRECTORY src
-  DESTINATION include/appl/offline
+  DESTINATION include/appl
   FILES_MATCHING PATTERN "*.h"
 )
 install(FILES package.xml
