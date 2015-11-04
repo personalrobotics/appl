@@ -16,8 +16,13 @@ SharedPointer<BeliefWithState> BeliefTransitionMOMDPLite::nextBelief(SharedPoint
 {
 	throw runtime_error("not implemented");
 }
+
 SharedPointer<BeliefWithState> BeliefTransitionMOMDPLite::nextBelief2(SharedPointer<BeliefWithState> bp, int a, int o, int obsX, SharedPointer<SparseVector>& jspv )
 {
 	throw runtime_error("not implemented");
 }
 
+SharedPointer<BeliefWithState> BeliefTransitionMOMDPLite::nextBelief(SharedPointer<belief_vector>& belY, DenseVector& belX, int a, int o, int obsX)
+{
+	throw runtime_error("not implemented");
+}
