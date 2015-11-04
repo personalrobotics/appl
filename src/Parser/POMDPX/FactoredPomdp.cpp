@@ -662,7 +662,7 @@ unsigned int FactoredPomdp::start() {
     // printing out the description of the file
     TiXmlElement *pElemDesc = hDoc.FirstChild("pomdpx").FirstChild("Description").ToElement();
     string description;
-    if(pElemDesc)
+    if(pElemDesc && pElemDesc->GetText())
 	description = pElemDesc->GetText();
     if (DEBUGREADXMLINPUT)
 	debugfile << "description: " << description << endl;
