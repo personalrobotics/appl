@@ -21,7 +21,7 @@ namespace momdp
         {
         public:
             typedef vector<SparseVector_Entry>::const_iterator iterator;
-            inline SparseCol(): _begin(NULL), _end(NULL) {}
+            inline SparseCol(): _begin(), _end() {}
             inline SparseCol(iterator b, iterator e): _begin(b), _end(e) {}
             inline iterator begin() { return _begin; }
             inline iterator end() { return _end; }
